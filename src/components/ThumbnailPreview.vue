@@ -103,7 +103,7 @@ function nameStyle(name) {
 	width: min(100%, 1280px);
 	aspect-ratio: 16 / 9;
 	margin: 0 auto;
-	border-radius: 18px;
+	/* border-radius: 18px; */
 	background: white;
 	color: black;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
