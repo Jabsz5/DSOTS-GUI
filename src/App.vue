@@ -18,6 +18,8 @@ import Navbar from './components/Navbar.vue'
 import PlayerForm from './components/PlayerForm.vue'
 import ThumbnailPreview from './components/ThumbnailPreview.vue'
 
+const publicPath = import.meta.env.BASE_URL
+
 const thumbnailRef = ref(null)
 
 const characters = [
@@ -67,13 +69,13 @@ const thumbnail = ref({
 	setName: 'Grand Finals',
 	gameName: 'Melee',
 	logo: 'yellow',
-	background: '/assets/stadium.png',
+    background: `${publicPath}assets/stadium.png`,
 })
 
 const selectedLogoPath = computed(() => {
 	return thumbnail.value.logo === 'red'
-		? '/assets/dsots-red.png'
-		: '/assets/dsots-yellow.png'
+		? `${publicPath}assets/dsots-red.png`
+		: `${publicPath}assets/dsots-yellow.png`
 })
 
 function getCharacterMeta(characterValue) {
@@ -87,7 +89,7 @@ function getCharacterImage(player) {
 		return ''
 	}
 
-	return `/characterAssetsChris/${character.value}/${character.filePrefix}${player.color}.png`
+    return `${publicPath}characterAssetsChris/${character.value}/${character.filePrefix}${player.color}.png`
 }
 
 
