@@ -10,7 +10,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-
     "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
     "electron:pack": "npm run build && electron-builder --dir",
     "electron:linux": "npm run build && electron-builder --linux AppImage",
@@ -19,7 +18,8 @@
   },
   "dependencies": {
     "html-to-image": "^1.11.13",
-    "vue": "^3.5.34"
+    "vue": "^3.5.34",
+    "vue-router": "^5.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.6",

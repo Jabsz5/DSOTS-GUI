@@ -1,0 +1,69 @@
+.send-youtube-card {
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--surface-color);
+  box-shadow: var(--shadow);
+}
+
+.send-youtube-card h2 {
+  margin-top: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.field span {
+  font-weight: 800;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+  background: var(--surface-color-2);
+  color: var(--text-color);
+}
+
+.field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.thumbnail-preview-wrap {
+  margin: 1rem 0;
+}
+
+.thumbnail-preview {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-color-2);
+}
+
+.status-box p {
+  margin: 0.35rem 0;
+}

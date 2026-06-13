@@ -1,0 +1,17 @@
+.oauth-card {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.oauth-card p {
+  text-align: center;
+}
