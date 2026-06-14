@@ -1,0 +1,45 @@
+.upload-video-page {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.upload-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--surface-color);
+  box-shadow: var(--shadow);
+}
+
+.upload-card h1 {
+  margin-top: 0;
+}
+
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  padding: 1rem;
+  border: 2px dashed var(--border);
+  border-radius: 18px;
+  background: var(--surface-color-2);
+  cursor: pointer;
+  font-weight: 800;
+  text-align: center;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.video-preview {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  margin-top: 1.5rem;
+  border-radius: 18px;
+  background: black;
+}
